@@ -1,0 +1,11 @@
+.custom-card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit;        /* Inherit color from the parent element */
+    display: block;        /* Make the link block-level to cover the entire card */
+  }
+  
+  .custom-card-link:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    color: inherit;        /* Ensure no color change on hover */
+  }
+  
