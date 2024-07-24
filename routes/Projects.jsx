@@ -19,7 +19,7 @@ const ProjectCard = () => {
 
   return (
     <div className={`cardContainer ${clicked ? 'is-clicked' : ''}`} onClick={handleClick}>
-      <Link to="/projects" style={linkStyle}>
+      <Link to="/project1" style={linkStyle}>
         <Card className="card" style={{ textDecoration: 'none' }}>
           <Card.Body>
             <Card.Title>Projects</Card.Title>
@@ -28,7 +28,7 @@ const ProjectCard = () => {
         </Card>
       </Link>
     </div>
-    
+
   );
 };
 

@@ -1,5 +1,5 @@
 import './App.css'
-import LayoutCard from './LayoutCard'
+import MainCards from './MainCards'
 
 
 
@@ -7,15 +7,7 @@ import LayoutCard from './LayoutCard'
 
 function App() {
   return (
-    <>
-    <div className="main-header">
-      <h1>Robert S</h1>
-    </div>
- 
-          <LayoutCard/>
-    
-     
-    </>
+    <MainCards />
   )
 }
 

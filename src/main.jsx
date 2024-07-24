@@ -17,19 +17,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const router = createHashRouter([
-  { path: '/', 
-    element: <App />,},
- 
+  {
+    path: '/',
+    element: <App />,
+  },
+
   { path: '/about', element: <About /> },
   { path: '/contact', element: <Contact /> },
   { path: '/projects', element: <Projects /> },
   { path: '/project1', element: <Project1 /> },
   { path: '/project2', element: <Project2 /> },
-  { path: '/project3', element: <Project3 />}
+  { path: '/project3', element: <Project3 /> }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

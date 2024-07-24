@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+  margin: 0;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 200px 20px 300px;
+  box-sizing: border-box;
+}
+.nav01 {
+  background: linear-gradient(90deg, #5f2c82, #49a09d);
+}
+.nav02 {
+  background: linear-gradient(90deg, #eecda3, #ef629f);
+}
+.nav03 {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+}
+.nav04 {
+  background: linear-gradient(90deg, #93f9b9, #1d976c);
+}
+.nav05 {
+  background: linear-gradient(90deg, #1a2980, #26d0ce);
+}
+
+nav::before {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font: 400 24px/1 'Lato', sans-serif;
+  text-align: center;
+}
+.nav01::before {
+  content: 'DEMO #1';
+}
+.nav02::before {
+  content: 'DEMO #2';
+}
+.nav03::before {
+  content: 'DEMO #3';
+}
+.nav04::before {
+  content: 'DEMO #4';
+}
+.nav05::before {
+  content: 'DEMO #5';
+}
+
+/* common */
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+nav ul li {
+  position: relative;
+  float: left;
+  border: 2px solid #fff;
+}
+nav ul li:not(:first-child) {
+  border-left: none;
+}
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+nav ul li a {
+  display: inline-block;
+  padding: 1em 3em;
+  color: #fff;
+  font: 400 18px/1 'Lato', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+}
+nav ul ul li {
+  float: none;
+  margin: 0;
+}
+nav ul ul li:not(:first-child) {
+  border: 2px solid #fff;
+  border-top: none;
+}
+nav ul ul ul {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+}
+
+/* DEMO #1 */
+.nav01 ul ul {
+  display: none;
+}
+.nav01 ul li:hover > ul {
+  display: block;
+}
+
+/* DEMO #2 */
+.nav02 ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.nav02 ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* DEMO #3 */
+.nav03 ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  transform: translateY(-20px);
+}
+.nav03 ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DEMO #4 */
+.nav04 ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  transform: translateY(10px);
+}
+.nav04 ul ul ul {
+  transform: translateX(-20px) translateY(0);
+}
+.nav04 ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav04 ul ul li:hover > ul {
+  transform: translateX(0) translateY(0);
+}
+
+/* DEMO #5 */
+.nav05 ul li {
+  perspective: 300px;
+}
+.nav05 ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-90deg) rotateY(0);
+  transform-origin: 0 0;
+}
+.nav05 ul ul li {
+  perspective: 1500px;
+}
+.nav05 ul ul ul {
+  transform: rotateX(0) rotateY(-90deg);
+}
+.nav05 ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0) rotateY(0);
+}
+
+.container{
+    background-color: #5421BB;
+    color: white;
+}
+body{
+    text-align: center;
+}
+
+
+
+
+
+
+
+

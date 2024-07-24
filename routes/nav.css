@@ -1,0 +1,126 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+  margin: 0;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 200px 20px 300px;
+  box-sizing: border-box;
+}
+
+/* .nav05 {
+    background: linear-gradient(90deg, #1a2980, #26d0ce);
+  } */
+  nav::before {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font: 400 24px/1 'Lato', sans-serif;
+    text-align: center;
+  }
+  /* .nav05::before {
+    content: 'DEMO #5';
+  } */
+  /* common */
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+nav ul li {
+  position: relative;
+  float: left;
+  border: 2px solid #fff;
+}
+nav ul li:not(:first-child) {
+  border-left: none;
+}
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+nav ul li a {
+  display: inline-block;
+  padding: 1em 3em;
+  color: #fff;
+  font: 400 18px/1 'Lato', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+}
+nav ul ul li {
+  float: none;
+  margin: 0;
+}
+nav ul ul li:not(:first-child) {
+  border: 2px solid #fff;
+  border-top: none;
+}
+nav ul ul ul {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+}
+/* DEMO #5 */
+.nav05 ul li {
+  perspective: 300px;
+}
+.nav05 ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-90deg) rotateY(0);
+  transform-origin: 0 0;
+}
+.nav05 ul ul li {
+  perspective: 1500px;
+}
+.nav05 ul ul ul {
+  transform: rotateX(0) rotateY(-90deg);
+}
+.nav05 ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0) rotateY(0);
+}
+
+.container{
+    background-color: #5421BB;
+    color: white;
+}
+body{
+    text-align: center;
+}
+
+
+
+
+/* Underline From Right */
+.underline-from-right {
+  @include underline(#f9d423, 0.3s, 0.3s);
+}
+
+
+@mixin hacks() {
+  @include prefixed(transform, translateZ(0));
+  @include prefixed(backface-visibility, hidden);
+  @include prefixed(perspective, 1000);
+  @include prefixed(perspective-origin, 50% 50%);
+}

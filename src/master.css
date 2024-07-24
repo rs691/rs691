@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+body{
+
+ 
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: black;
+}
+
+h2 {
+  font-size: 100px;
+  color: white;
+  font-family: 'Anybody', sans-serif;
+  text-align: center;
+  
+}
+
+
+
+
+
+.card{
+  text-align: center;
+  font-size: 20px;
+  margin: 1.5rem 0;
+  padding: 10px;
+  font-family: 'Anybody', sans-serif;
+  background: linear-gradient(120deg, #ff8064, #725bdc); /* Gradient background */
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 300px;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+
+}
+
+.right-side {
+  padding-top: 20px;
+  font-size:  80px;
+  color: white;
+  font-family: 'Anybody', cursive;
+  font-weight: 400;
+  text-align: start;
+}
+.right-side-1 {
+  padding-top: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: 'ubuntu', cursive;
+    font-weight: 400;
+    text-align: justify;
+  }
+.main-header{
+    font-size: 150px;
+}
+
+
+
+
+
+
+
+  
